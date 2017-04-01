@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:esp8266-programmer-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,8 +30,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:switches
-LIBS:sw_dp3t
-LIBS:jumper_no_dual
+LIBS:ESP8266
+LIBS:Microchip
 LIBS:esp8266-programmer-cache
 EELAYER 25 0
 EELAYER END
@@ -47,7 +48,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_OTG P1
+L USB_OTG-RESCUE-esp8266-programmer P1
 U 1 1 58DABF08
 P 9150 1650
 F 0 "P1" V 8800 1650 50  0000 C CNN
@@ -154,7 +155,7 @@ F 3 "" H 5300 2200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AP1117 U1
+L AP1117-RESCUE-esp8266-programmer U1
 U 1 1 58DC158E
 P 6650 2050
 F 0 "U1" H 6950 2250 50  0000 C CNN
@@ -404,4 +405,138 @@ F 3 "" H 3850 4950 50  0000 C CNN
 $EndComp
 Text Label 3350 4800 2    60   ~ 0
 PP_GPIO15
+$Comp
+L ESP-12 U?
+U 1 1 58DFBEBA
+P 6450 4200
+F 0 "U?" H 6450 4100 50  0000 C CNN
+F 1 "ESP-12" H 6450 4300 50  0000 C CNN
+F 2 "" H 6450 4200 50  0001 C CNN
+F 3 "" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3900 5100 3900
+Text Label 5150 3900 0    60   ~ 0
+PP_REST
+Wire Wire Line
+	5550 4100 5100 4100
+Text Label 5150 4100 0    60   ~ 0
+PP_CH_EN
+Wire Wire Line
+	5550 4000 5100 4000
+Text Label 5150 4000 0    60   ~ 0
+PP_ADC
+Wire Wire Line
+	5550 4200 5100 4200
+Text Label 5150 4200 0    60   ~ 0
+PP_GPIO16
+Wire Wire Line
+	5550 4300 5100 4300
+Text Label 5150 4300 0    60   ~ 0
+PP_GPIO14
+Wire Wire Line
+	5550 4400 5100 4400
+Text Label 5150 4400 0    60   ~ 0
+PP_GPIO12
+Wire Wire Line
+	5550 4500 5100 4500
+Text Label 5150 4500 0    60   ~ 0
+PP_GPIO13
+Wire Wire Line
+	7350 4500 7800 4500
+Wire Wire Line
+	7350 4400 7800 4400
+Wire Wire Line
+	7350 4300 7800 4300
+Wire Wire Line
+	7350 4200 7800 4200
+Wire Wire Line
+	7350 4100 7800 4100
+Wire Wire Line
+	7350 4000 7800 4000
+Wire Wire Line
+	7350 3900 7800 3900
+Text Label 7300 3900 0    60   ~ 0
+PP_TXD
+Text Label 7300 4000 0    60   ~ 0
+PP_RXD
+Text Label 7300 4100 0    60   ~ 0
+PP_GPIO5
+Text Label 7300 4200 0    60   ~ 0
+PP_GPIO4
+Text Label 7300 4300 0    60   ~ 0
+PP_GPIO0
+Text Label 7300 4400 0    60   ~ 0
+PP_GPIO2
+Text Label 7300 4500 0    60   ~ 0
+PP_GPIO15
+$Comp
+L MCP2221-I/SL U?
+U 1 1 58DFCE15
+P 9150 4250
+F 0 "U?" H 9150 5100 50  0000 C CNN
+F 1 "MCP2221-I/SL" H 9150 5000 50  0000 C CNN
+F 2 "IPC7351-Nominal:SOIC127P600X175-14" H 9150 5000 60  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005292B.pdf" H 9150 5000 60  0001 C CNN
+F 4 "IC MICROCHIP MCP2221-I/SL" H 9650 5800 60  0001 C CNN "BOM"
+	1    9150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3650 8450 3650
+Wire Wire Line
+	8450 3650 8450 3350
+$Comp
+L VCC #PWR?
+U 1 1 58DFD4A9
+P 8450 3350
+F 0 "#PWR?" H 8450 3400 30  0001 C CNN
+F 1 "VCC" H 8450 3450 50  0000 C CNN
+F 2 "" H 8450 3350 60  0000 C CNN
+F 3 "" H 8450 3350 60  0000 C CNN
+	1    8450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 58DFD4DD
+P 6450 3300
+F 0 "#PWR?" H 6450 3350 30  0001 C CNN
+F 1 "VCC" H 6450 3400 50  0000 C CNN
+F 2 "" H 6450 3300 60  0000 C CNN
+F 3 "" H 6450 3300 60  0000 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58DFD60B
+P 8550 5350
+F 0 "#PWR?" H 8550 5350 30  0001 C CNN
+F 1 "GND" H 8550 5280 30  0001 C CNN
+F 2 "" H 8550 5350 60  0000 C CNN
+F 3 "" H 8550 5350 60  0000 C CNN
+	1    8550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4850 8550 5350
+Wire Wire Line
+	8850 1550 8500 1550
+Wire Wire Line
+	8850 1650 8500 1650
+Text Label 8600 1550 0    60   ~ 0
+D-
+Text Label 8600 1650 0    60   ~ 0
+D+
+Wire Wire Line
+	8550 4150 8400 4150
+Wire Wire Line
+	8550 4250 8400 4250
+Text Label 8450 4250 0    60   ~ 0
+D+
+Text Label 8450 4150 0    60   ~ 0
+D-
 $EndSCHEMATC

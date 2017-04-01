@@ -385,7 +385,7 @@ $EndComp
 Wire Wire Line
 	1700 2100 1950 2100
 Text Label 1800 2050 0    60   ~ 0
-PP_REST
+PP_GPIO16
 NoConn ~ 1600 2350
 Wire Wire Line
 	3150 4850 3850 4850

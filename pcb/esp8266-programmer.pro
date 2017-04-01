@@ -1,4 +1,4 @@
-update=Wed 29 Mar 2017 20:07:19 BST
+update=Sat 01 Apr 2017 00:30:24 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=switches
 LibName31=sw_dp3t
+LibName32=jumper_no_dual

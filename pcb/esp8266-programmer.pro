@@ -1,4 +1,4 @@
-update=Sat 01 Apr 2017 16:02:59 BST
+update=Sun 02 Apr 2017 05:42:28 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../../electronics/kicad/libraries/kicad-ESP8266;/home/alanlord/Personal/Projects/electronics/kicad/libraries/kicad-schlib/library
+LibDir=../kicad_libs
 [eeschema/libraries]
 LibName1=esp8266-programmer-rescue
 LibName2=power
@@ -60,8 +60,8 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=switches
-LibName32=sw_dp3t
-LibName33=jumper_no_dual
-LibName34=ESP8266
-LibName35=/home/alanlord/Personal/Projects/electronics/kicad/libraries/kicad-ESP8266/ESP8266
-LibName36=Microchip
+LibName32=ESP8266
+LibName33=/home/alanlord/Personal/Projects/electronics/kicad/libraries/kicad-ESP8266/ESP8266
+LibName34=Microchip
+LibName35=mcp1700
+LibName36=jumper_no_dual

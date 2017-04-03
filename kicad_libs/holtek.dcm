@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HT7333
+D Positive 12V Linear Regulator, Fixed Output 3.3V 250mA, SOT-89
+K Voltage Regulator 250mA Positive
+F http://www.holtek.com.tw/documents/10179/116711/HT73xxv150.pdf
+$ENDCMP
+#
+#End Doc Library

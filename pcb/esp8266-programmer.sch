@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:esp8266-programmer-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +29,8 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:switches
+LIBS:ESP8266
+LIBS:Microchip
 LIBS:mcp1700
 LIBS:jumper_no_dual
 LIBS:esp8266-programmer-cache
@@ -339,7 +340,7 @@ U 1 1 58DFBEBA
 P 6450 4200
 F 0 "U?" H 6450 4100 50  0000 C CNN
 F 1 "ESP-12" H 6450 4300 50  0000 C CNN
-F 2 "" H 6450 4200 50  0001 C CNN
+F 2 "jdunmire/kicad-ESP8266/ESP8266.pretty:ESP-12" H 6450 4200 50  0001 C CNN
 F 3 "" H 6450 4200 50  0001 C CNN
 	1    6450 4200
 	1    0    0    -1  
@@ -431,7 +432,7 @@ D+
 Text Label 8450 4150 0    60   ~ 0
 D-
 $Comp
-L GND #PWR?
+L GND-RESCUE-esp8266-programmer #PWR?
 U 1 1 58E05ABF
 P 6900 2350
 F 0 "#PWR?" H 6900 2100 50  0001 C CNN
@@ -454,7 +455,7 @@ F 3 "" V 9100 1550 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L GND-RESCUE-esp8266-programmer #PWR?
 U 1 1 58E05F00
 P 8850 1850
 F 0 "#PWR?" H 8850 1600 50  0001 C CNN
@@ -465,7 +466,7 @@ F 3 "" H 8850 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND-RESCUE-esp8266-programmer #PWR?
 U 1 1 58E05FC7
 P 8850 2550
 F 0 "#PWR?" H 8850 2300 50  0001 C CNN
@@ -487,7 +488,7 @@ F 3 "" H 8550 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND-RESCUE-esp8266-programmer #PWR?
 U 1 1 58E064F7
 P 8550 5000
 F 0 "#PWR?" H 8550 4750 50  0001 C CNN
@@ -511,7 +512,7 @@ F 3 "" H 6450 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND-RESCUE-esp8266-programmer #PWR?
 U 1 1 58E067DB
 P 6450 5100
 F 0 "#PWR?" H 6450 4850 50  0001 C CNN

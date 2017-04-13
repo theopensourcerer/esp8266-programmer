@@ -1,4 +1,4 @@
-update=Tue 04 Apr 2017 21:35:45 BST
+update=Sat 08 Apr 2017 22:09:04 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,4 @@ LibName31=ESP8266
 LibName32=Microchip
 LibName33=mcp1700
 LibName34=jumper_no_dual
+LibName35=usb_otg

@@ -1,4 +1,4 @@
-update=Sat 08 Apr 2017 22:09:04 BST
+update=Fri 14 Apr 2017 07:30:32 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,4 @@ LibName32=Microchip
 LibName33=mcp1700
 LibName34=jumper_no_dual
 LibName35=usb_otg
+LibName36=sw_dp3t

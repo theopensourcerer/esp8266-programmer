@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/brian/Development/Projects/esp8266-programmer/pcb/esp8266-programmer.sch)
-    (date "Tue 11 Apr 2017 22:10:12 BST")
+    (date "Fri 14 Apr 2017 07:45:59 BST")
     (tool "Eeschema 4.0.5+dfsg1-4~bpo8+1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -30,7 +30,7 @@
     (comp (ref SW3)
       (value SW_DP3T)
       (footprint KiCad/Buttons_Switches_ThroughHole.pretty:SW_DIP_x3_W7.62mm_Slide_LowProfile)
-      (libsource (lib esp8266-programmer-cache) (part SW_DP3T))
+      (libsource (lib sw_dp3t) (part SW_DP3T))
       (sheetpath (names /) (tstamps /))
       (tstamp 58DC0605))
     (comp (ref P2)
@@ -285,7 +285,8 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib esp8266-programmer-cache) (part SW_DP3T)
+    (libpart (lib sw_dp3t) (part SW_DP3T)
+      (description "Switch, three position, double pole triple throw, 3 position switch, DP3T")
       (footprints
         (fp SW*)
         (fp DP3T*))
@@ -326,12 +327,10 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name shield) (type passive)))))
   (libraries
-    (library (logical switches)
-      (uri /usr/share/kicad/library/switches.lib))
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical switches)
+      (uri /usr/share/kicad/library/switches.lib))
     (library (logical ESP8266)
       (uri /home/brian/Development/Projects/esp8266-programmer/kicad_extras/kicad-ESP8266/ESP8266.lib))
     (library (logical Microchip)
@@ -340,8 +339,10 @@
       (uri /home/brian/Development/Projects/esp8266-programmer/kicad_extras/kicad_libs/mcp1700.lib))
     (library (logical jumper_no_dual)
       (uri /home/brian/Development/Projects/esp8266-programmer/kicad_extras/kicad_libs/jumper_no_dual.lib))
-    (library (logical esp8266-programmer-cache)
-      (uri /home/brian/Development/Projects/esp8266-programmer/pcb/esp8266-programmer-cache.lib)))
+    (library (logical sw_dp3t)
+      (uri /home/brian/Development/Projects/esp8266-programmer/kicad_extras/kicad_libs/sw_dp3t.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name /PP_REST)
       (node (ref SW1) (pin 4))
